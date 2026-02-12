@@ -8,34 +8,110 @@ Description: Strona klubu Badminton Lider Wieliczka
 
 */
 
-.typewriter {
-    display: flex;
-    /*justify-content: center;*/
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.typewriter p {
-color: red;
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+}
 
-    font-family: monospace;
-    font-size: 1.5rem;
-    /*margin-inline: auto;*/
-    overflow: hidden;   
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.85));
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+* {
+    /*background-color: #1C1C1C;*/
+}
+
+/* .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.typewriter {
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter h1 {
+    width: 0;
+    color: #fff;
+    font-weight: 400;
+    font-family: Fugaz One, monospace;
+    font-size: 10rem;
+    margin-inline: auto;
+    overflow: hidden;
+    padding-left: 10px;
+    /* padding-right: 10px; */
     white-space: nowrap;
-    border-right: 1px solid;
-    animation: typing 3s steps(22) forwards, blink 1s step-end ifinite;
+    border-right: 4px solid transparent;
+    animation: typing 1s steps(9) forwards, blink 1s step-end infinite;
+    animation-delay: 2000ms;
+
+    /*text-shadow:
+    10px 10px 0 #000,
+    -10px 10px 0 #000,
+    -10px -10px 0 #000,
+    10px -10px 0 #000;*/
+
+    position: relative;
+    box-sizing: border-box;
+}
+
+h1 span {
+    position: absolute;
+    -webkit-text-stroke: 0px;
+    left: 0px;
+    padding-left: 10px;
 }
 
 @keyframes typing {
     from {
         width: 0;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke: 20px rgba(0,0,0,0.25);
     }
 
     to {
         width: 100%;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke: 20px rgba(0,0,0,0.25);
+         padding-right: 10px;
     }
 }
 
 @keyframes blink {
+    0% {
+        border-color: white;
+    }
+
     50% {
         border-color: transparent;
     }
