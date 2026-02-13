@@ -89,6 +89,7 @@ h1 span {
     -webkit-text-stroke: 0px;
     left: 0px;
     padding-left: 10px;
+	color: white;
 }
 
 @keyframes typing {
