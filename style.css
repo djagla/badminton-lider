@@ -94,13 +94,11 @@ h1 span {
 @keyframes typing {
     from {
         width: 0;
-        -webkit-text-fill-color: white;
         -webkit-text-stroke: 20px rgba(0,0,0,0.25);
     }
 
     to {
         width: 100%;
-        -webkit-text-fill-color: white;
         -webkit-text-stroke: 20px rgba(0,0,0,0.25);
          padding-right: 10px;
     }
