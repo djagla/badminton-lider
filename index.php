@@ -28,7 +28,8 @@
         </div>
 	</div>
 </section>
-
+	
+<div style="background-color: #fff">
 <h1><?php bloginfo( 'name' ); ?></h1>
 <h2><?php bloginfo( 'description' ); ?></h2>
 
@@ -58,6 +59,8 @@ previous_posts_link();
 <p>No posts found. :(</p>
 
 <?php endif; ?>
+</div>
+	
 <?php wp_footer(); ?>
 </body>
 </html>
