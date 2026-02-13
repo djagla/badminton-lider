@@ -11,7 +11,7 @@
     <section class="hero">
 	<video class="hero-video" autoplay muted loop playsinline>
 		<source
-			src="<?php echo get_template_directory_uri(); ?>/assets/video/hero.mp4"
+			src="<?php echo get_template_directory_uri(); ?>/assets/video/hero_hd.mp4"
 			type="video/mp4"
 		/>
 
