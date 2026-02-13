@@ -24,11 +24,9 @@
 		<div class="typewriter">
             <div>
                 <h1>BADMINTON<span>BADMINTON</span></h1>
-				
             </div>
         </div>
 	</div>
-	<?php echo get_template_directory_uri(); ?>
 </section>
 
 <h1><?php bloginfo( 'name' ); ?></h1>
