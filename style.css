@@ -8,6 +8,10 @@ Description: Strona klubu Badminton Lider Wieliczka
 
 */
 
+body {
+	backgrond-color: #fff;
+}
+
 .hero {
   position: relative;
   height: 100vh;
@@ -41,12 +45,6 @@ Description: Strona klubu Badminton Lider Wieliczka
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
-}
-
-
-* {
-    /*background-color: #1C1C1C;*/
-		background-color: #fff;
 }
 
 /* .hero {
