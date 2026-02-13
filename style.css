@@ -61,7 +61,7 @@ body {
 
 .typewriter h1 {
     width: 0;
-    color: #fff;
+    color: transparent;
     font-weight: 400;
     font-family: Fugaz One, monospace;
     font-size: 10rem;
