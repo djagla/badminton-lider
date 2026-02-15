@@ -65,6 +65,7 @@ table {
 
 body {
 	background-color: #fff;
+    font-family: Inter;
 }
 
 .bl-logo {
@@ -113,32 +114,32 @@ body {
 .typewriter {
     display: flex;
     justify-content: center;
-}
 
-.typewriter h1 {
-    width: 0;
-    color: transparent;
-    font-weight: 400;
-    font-family: Fugaz One, monospace;
-    font-size: 10rem;
-    margin-inline: auto;
-    overflow: hidden;
-    padding-left: 10px;
-    white-space: nowrap;
-    border-right: 4px solid transparent;
-    animation: typing 1s steps(9) forwards, blink 1s step-end infinite;
-    animation-delay: 1000ms;
+    h1 {
+        width: 0;
+        color: transparent;
+        font-weight: 400;
+        font-family: Fugaz One, monospace;
+        font-size: 10rem;
+        margin-inline: auto;
+        overflow: hidden;
+        padding-left: 10px;
+        white-space: nowrap;
+        border-right: 4px solid transparent;
+        animation: typing 1s steps(9) forwards, blink 1s step-end infinite;
+        animation-delay: 1000ms;
 
-    position: relative;
-    box-sizing: border-box;
-}
-
-h1 span {
-    position: absolute;
-    -webkit-text-stroke: 0px;
-    left: 0px;
-    padding-left: 10px;
-	color: white;
+        position: relative;
+        box-sizing: border-box;
+        
+        span {
+            position: absolute;
+            -webkit-text-stroke: 0px;
+            left: 0px;
+            padding-left: 10px;
+            color: white;
+        }
+    }
 }
 
 @keyframes typing {
@@ -161,5 +162,50 @@ h1 span {
 
     50% {
         border-color: transparent;
+    }
+}
+
+/* NEWS section */
+
+.news {
+    padding: 60px 40px 80px 40px;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .news-list {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .news-item {
+        height: 300px;
+        flex: 1;
+        background-color: #AAAAAA;
+        padding: 20px;
+        position: relative;
+        border-bottom: 1px solid #cccccc;
+
+        .news-item-content {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            padding: 20px 0 20px 0;
+
+            h3 {
+                font-weight: bold;
+                margin-top: 16px;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }

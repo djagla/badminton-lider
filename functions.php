@@ -1,7 +1,8 @@
 <?php
 
 function wpb_add_google_fonts() {
-        wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap', false ); 
+        wp_enqueue_style( 'wpb-google-fonts1', 'https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap', false ); 
+        wp_enqueue_style( 'wpb-google-fonts2', 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap', false ); 
 }
   
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
