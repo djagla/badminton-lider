@@ -42,10 +42,22 @@
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 					<div class="news-item">
+						<?php if ( has_post_thumbnail() ) : ?>
+							<div class="news-item-thumbnail">
+								<?php the_post_thumbnail( 'medium' ); ?>
+							</div>
+						<?php endif; ?>
+
+						<?php the_category(); ?>
+
 						<div class="news-item-content">
-							<?php the_date(); ?>
+							<p class="news-date"><?php the_date(); ?></p>
 
 							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+				
+							<a class="read-more" href="<?php the_permalink(); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/right_arrow.svg" alt="Czytaj więcej" />
+							</a>
 						</div>
 					</div>
 

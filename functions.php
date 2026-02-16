@@ -21,3 +21,5 @@ function add_tailwind() {
 }
   
 add_action('wp_enqueue_scripts', 'add_tailwind');
+
+add_theme_support( 'post-thumbnails' );
