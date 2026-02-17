@@ -7,7 +7,20 @@
 	<?php wp_head(); ?>
 </head>
 <body>
-	<img class="bl-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/BL_logo.svg" alt="Badminton Lider" />
+	<header>
+		<nav class="main-nav">
+			<img class="bl-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/BL_logo.svg" alt="Badminton Lider" />
+			
+			<?php
+				wp_nav_menu( array(
+					'menu' => 'main_navigation',
+					'theme_location' => 'primary',
+					'menu_class'     => 'nav-menu',
+				) );
+			?>
+		</nav>
+	</header>
+	
 
     <section class="hero">
 	<video class="hero-video" autoplay muted loop playsinline>
