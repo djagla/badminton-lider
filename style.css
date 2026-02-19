@@ -85,10 +85,13 @@ header {
         gap: 32px;
         width: 100%;
         max-width: 1200px;;
-        /* padding: 20px 40px; */
         z-index: 4;
 
-        /* background-color: red; */
+        .main-nav-wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
 
         .nav-menu {
             display: flex;
@@ -102,8 +105,8 @@ header {
             padding: 0 20px;
             text-decoration: none;
             color: #fff;
-            font-weight: 500;
-            font-size: 0.875rem;
+            font-weight: 600;
+            font-size: 1rem;
         }
 
         a:hover {
@@ -112,6 +115,32 @@ header {
         
         .bl-logo {
             height: 80px;
+        }
+
+        .button-link {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+
+            line-height: 40px;
+            padding: 0 16px;
+            text-decoration: none;
+            color: #1C1C1C;
+            font-weight: 600;
+            font-size: 1rem;
+            background-color: #fff;
+            border-radius: 20px;
+        }
+
+        .button-link:hover {
+            background-color: #00BEFF;
+            color: #fff;
+        }
+
+        .button-link.white {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
         }
     }
 }
@@ -211,6 +240,7 @@ header {
 
 .news {
     padding: 60px 40px 80px 40px;
+    background-color: #fff;
 
     h2 {
         font-size: 2rem;
