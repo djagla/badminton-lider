@@ -9,7 +9,9 @@
 <body>
 	<header>
 		<nav class="main-nav">
-			<img class="bl-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/BL_logo.svg" alt="Badminton Lider" />
+			<a href="<?php echo get_home_url(); ?>">
+				<img class="bl-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/BL_logo.svg" alt="Badminton Lider" />
+			</a>
 			
 			<?php
 				wp_nav_menu( array(
@@ -18,6 +20,8 @@
 					'menu_class'     => 'nav-menu',
 				) );
 			?>
+
+			<a href="">Wielicki Cup</a>
 		</nav>
 	</header>
 	
