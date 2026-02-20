@@ -121,7 +121,7 @@ header {
             display: flex;
             flex-direction: row;
             gap: 8px;
-
+			text-wrap: nowrap;
             line-height: 40px;
             padding: 0 16px;
             text-decoration: none;
