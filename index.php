@@ -22,10 +22,10 @@
 					) );
 				?>
 
-				<a class="button-link" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/wc_logo.svg" alt="Badminton Lider" />Wielicki Cup</a>
+				<a class="button-link" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/wc_logo.svg" alt="" />Wielicki Cup</a>
 			</div>
 
-			<a class="button-link white" href="">Treningi</a>
+			<a class="button-link white" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/wc_logo.svg" alt="" />Treningi</a>
 		</nav>
 	</header>
 	
