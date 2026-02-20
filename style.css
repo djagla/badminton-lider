@@ -107,6 +107,10 @@ header {
             color: #fff;
             font-weight: 600;
             font-size: 1rem;
+
+			img {
+				height: 32px;
+			}
         }
 
         a:hover {
