@@ -90,7 +90,7 @@ header {
         .main-nav-wrapper {
             display: flex;
             flex-direction: row;
-            gap: 40px;
+            gap: 20px;
         }
 
         .nav-menu {
