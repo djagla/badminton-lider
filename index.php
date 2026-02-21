@@ -25,7 +25,20 @@
 				<a class="button-link" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/wc_logo.svg" alt="" />Wielicki Cup</a>
 			</div>
 
-			<a class="button-link white" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/wc_logo.svg" alt="" />Treningi</a>
+			<div class="essential-info">
+				<div class="essential-info-container">
+					<div class="essential-info-contact">
+						<span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/wc_logo.svg" alt="" />+48 600 470 053</span>
+						<span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/wc_logo.svg" alt="" />biuro@badmintonlider.pl</span>
+					</div>
+					<div class="essential-info-socials">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wc_logo.svg" alt="" />
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wc_logo.svg" alt="" />
+					</div>
+				</div>
+
+				<a class="button-link white" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/wc_logo.svg" alt="" />Treningi</a>
+			</div>
 		</nav>
 	</header>
 	
