@@ -109,9 +109,13 @@ header {
             font-size: 1rem;
 
 			img {
-				height: 32px;
+				height: 24px;
 				fill: red; /* CHYBA NIE DZIALA!!!!!1 */
 			}
+        }
+
+        a.wc-link img {
+            height: 32px;
         }
 
         a:hover {
@@ -120,35 +124,6 @@ header {
         
         .bl-logo {
             height: 80px;
-        }
-
-        .button-link {
-            display: flex;
-            flex-direction: row;
-			align-items: center;
-            width: fit-content;
-            gap: 8px;
-			text-wrap: nowrap;
-            line-height: 40px;
-            padding: 0 16px;
-            text-decoration: none;
-            color: #fff;
-            font-weight: 600;
-            font-size: 1rem;
-            background-color: transparent;
-			border: 1px solid #fff;
-            border-radius: 20px;
-        }
-		
-        .button-link.white {
-			background-color: #fff;
-            color: #1C1C1C;
-        }
-		
-        .button-link.white:hover {
-            background-color: #00BEFF;
-			border-color: #00BEFF;
-            color: #fff;
         }
 
         .essential-info {
@@ -179,7 +154,7 @@ header {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
-                    gap: 0px;
+                    gap: 4px;
                     border-right: 1px solid white;
                     padding-right: 16px;
                 }
@@ -187,11 +162,11 @@ header {
                 .essential-info-socials {
                     display: flex;
                     flex-direction: row;
-                    gap: 8px;
-                    padding-left: 8px;
+                    gap: 0;
+                    /* padding-left: 8px; */
 
                     img {
-                        width: 16px;
+                        width: 24px;
                     }
                 }
             }
@@ -199,7 +174,57 @@ header {
     }
 }
 
+.button-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    height: 40px;
+    gap: 8px;
+    text-wrap: nowrap;
+    line-height: 40px;
+    padding: 0 24px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
 
+.wc-link {
+    padding: 0 16px;
+}
+
+.button-link.white {
+    background-color: #fff;
+    color: #1C1C1C;
+    padding: 0 16px;
+}
+
+.button-link.white:hover {
+    background-color: #00BEFF;
+    border-color: #00BEFF;
+    color: #fff;
+}
+
+.icon-button-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.icon-button-link:hover {
+    background-color: rgba(255,255,255,0.25)
+}
 
 .hero {
   position: relative;
@@ -384,5 +409,49 @@ header {
                 }
             }
         }
+    }
+}
+
+footer {
+    background-color: #1C1C1C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 2rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+
+    p {
+        line-height: 1.5rem;
+    }
+
+    section {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    section.contact-info {
+        display: flex;
+        flex-direction: column;
+        padding: 80px 0 40px 0;
+        gap: 32px;
+    }
+
+    section.copyright {
+        justify-content: center;
+        padding: 24px 0;
+        font-size: 0.875rem;
+        border-top: 1px solid rgba(255,255,255,0.25)
     }
 }
