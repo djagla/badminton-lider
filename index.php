@@ -72,7 +72,15 @@
 			</section>
 				
 			<section class="news">
-				<h2>Aktualności</h2>
+				<div class="flex justify-between items-start">
+					<h2>Aktualności</h2>
+					<a class="read-more-link flex gap-x-4 items-center" href="<?php the_permalink(); ?>">
+						<span>Więcej aktualności</span>
+						<div class="read-more-button">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/right_arrow.svg" alt="Czytaj więcej" />
+						</div>
+					</a>
+				</div>
 
 				<div class="news-list">
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
