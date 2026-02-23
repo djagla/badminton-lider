@@ -69,6 +69,8 @@ body {
 }
 
 header {
+    transition: all 0.3s ease;
+
     position: fixed;
     width: 100%;
     height: 120px;
@@ -123,10 +125,13 @@ header {
         }
         
         .bl-logo {
+            transition: all 0.3s ease;
             height: 80px;
         }
 
         .essential-info {
+            transition: all 0.3s ease;
+
             display: flex;
             flex-direction: column;
             gap: 16px;
@@ -146,6 +151,7 @@ header {
             }
 
             .essential-info-container {
+                transition: all 0.3s ease;
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
@@ -171,6 +177,24 @@ header {
                 }
             }
         }
+    }
+}
+
+header.nav-scrolled {
+    background-color: rgba(28, 28, 28, 1);
+    /* background-color: rgba(255, 255, 255, 1); */
+    /* backdrop-filter: blur(10px); */
+
+    height: 80px;
+
+    .bl-logo {
+        height: 60px;
+    }
+
+    .essential-info-container {
+        /* display: absolute !important; */
+        display: none !important;
+        /* transform: translateY(-100%); */
     }
 }
 
@@ -363,7 +387,7 @@ header {
             object-fit: cover;
         }
 
-        .post-categories {
+        .category-label {
             display: block;
             position: absolute;
             top: 0px;
@@ -377,6 +401,14 @@ header {
                 line-height: 1.5rem;
                 padding: 0 8px;
             }
+        }
+
+        .category-label.WielickiCUP {
+            background-color: #00BEFF;
+        }
+
+        .category-label.Klub {
+            background-color: #00A85C;
         }
 
         .news-item-content {

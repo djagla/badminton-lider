@@ -7,9 +7,16 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-yellow-50: oklch(98.7% 0.026 102.212);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-neutral-500: oklch(55.6% 0 0);
+    --color-neutral-700: oklch(37.1% 0 0);
+    --color-white: #fff;
     --spacing: 0.25rem;
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -163,6 +170,9 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .block {
     display: block;
   }
@@ -171,6 +181,9 @@
   }
   .table {
     display: table;
+  }
+  .max-h-100 {
+    max-height: calc(var(--spacing) * 100);
   }
   .flex-grow {
     flex-grow: 1;
@@ -214,6 +227,15 @@
   .gap-y-16 {
     row-gap: calc(var(--spacing) * 16);
   }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .\!scroll-smooth {
+    scroll-behavior: smooth !important;
+  }
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -227,6 +249,69 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .backdrop-filter {
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .\[\&\:\:-webkit-scrollbar\]\:w-2 {
+    &::-webkit-scrollbar {
+      width: calc(var(--spacing) * 2);
+    }
+  }
+  .\[\&\:\:-webkit-scrollbar-thumb\]\:bg-gray-100 {
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-gray-100);
+    }
+  }
+  .\[\&\:\:-webkit-scrollbar-thumb\]\:bg-gray-300 {
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-gray-300);
+    }
+  }
+  .\[\&\:\:-webkit-scrollbar-thumb\]\:bg-gray-600 {
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-gray-600);
+    }
+  }
+  .\[\&\:\:-webkit-scrollbar-thumb\]\:bg-white {
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-white);
+    }
+  }
+  .\[\&\:\:-webkit-scrollbar-thumb\]\:bg-yellow-50 {
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-yellow-50);
+    }
+  }
+  .dark\:\[\&\:\:-webkit-scrollbar-thumb\]\:bg-neutral-500 {
+    @media (prefers-color-scheme: dark) {
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--color-neutral-500);
+      }
+    }
+  }
+  .\[\&\:\:-webkit-scrollbar-track\]\:bg-gray-100 {
+    &::-webkit-scrollbar-track {
+      background-color: var(--color-gray-100);
+    }
+  }
+  .\[\&\:\:-webkit-scrollbar-track\]\:bg-transparent {
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+  }
+  .dark\:\[\&\:\:-webkit-scrollbar-track\]\:bg-neutral-700 {
+    @media (prefers-color-scheme: dark) {
+      &::-webkit-scrollbar-track {
+        background-color: var(--color-neutral-700);
+      }
+    }
   }
 }
 @property --tw-rotate-x {
@@ -259,6 +344,42 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -269,6 +390,15 @@
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-outline-style: solid;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
     }
   }
 }

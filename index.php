@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="!scroll-smooth">
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header id="navbar">
 			<nav class="main-nav">
 				<a href="<?php echo get_home_url(); ?>">
 					<img class="bl-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/BL_logo.svg" alt="Badminton Lider" />
@@ -83,8 +83,17 @@
 				</div>
 
 				<div class="news-list">
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<?php 
+						$args = array(
+							'post_type'      => 'post',
+							'posts_per_page' => 4, // 👈 number of posts
+						);
 
+						$query = new WP_Query($args);
+
+						if ($query->have_posts()) :
+						while ($query->have_posts()) : $query->the_post();
+					?>
 						<div class="news-item">
 							<?php if ( has_post_thumbnail() ) : ?>
 								<div class="news-item-thumbnail">
@@ -92,7 +101,11 @@
 								</div>
 							<?php endif; ?>
 
-							<?php the_category(); ?>
+							<?php if ( has_category() ) : ?>
+								<div class="category-label <?php echo preg_replace('/\s+/', '', get_cat_name( get_the_category()[0]->term_id )); ?>">
+									<?php the_category(null, 'single', null) ?>
+								</div>
+							<?php endif; ?>
 
 							<div class="news-item-content">
 								<p class="news-date"><?php the_date(); ?></p>
@@ -104,24 +117,15 @@
 								</a>
 							</div>
 						</div>
+					<?php 
+						endwhile; 
 
-						<?php endwhile; ?>
-							
-						<?php
-							if ( get_next_posts_link() ) {
-							next_posts_link();
-							}
-						?>
-						<?php
-							if ( get_previous_posts_link() ) {
-							previous_posts_link();
-							}
-						?>
-							
-						<?php else: ?>
+						wp_reset_postdata();
+						
+						else: 
+					?>
 						
 						<p>No posts found. :(</p>
-					
 					<?php endif; ?>
 				</div>
 			</section>
