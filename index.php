@@ -10,8 +10,8 @@
 	<body>
 		<header id="navbar">
 			<nav class="main-nav">
-				<a href="<?php echo get_home_url(); ?>">
-					<img class="bl-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/BL_logo.svg" alt="Badminton Lider" />
+				<a class="bl-logo" href="<?php echo get_home_url(); ?>">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/BL_logo.svg" alt="Badminton Lider" />
 				</a>
 				
 				<div class="main-nav-wrapper">
