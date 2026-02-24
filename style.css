@@ -191,7 +191,7 @@ header.nav-scrolled {
 
     height: 80px;
 
-    .bl-logo img {
+    a.bl-logo img {
         height: 60px;
     }
 
