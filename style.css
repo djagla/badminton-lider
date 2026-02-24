@@ -126,12 +126,12 @@ header {
         
         a.bl-logo {
 			padding: 0;
-			
-			img {
-            	transition: all 0.3s ease;
-            	height: 80px;
-			}
         }
+
+		a.bl-logo img {
+			transition: all 0.3s ease;
+			height: 80px;
+		}
 
         .essential-info {
             transition: all 0.3s ease;
@@ -191,7 +191,7 @@ header.nav-scrolled {
 
     height: 80px;
 
-    .bl-logo {
+    a.bl-logo img {
         height: 60px;
     }
 
