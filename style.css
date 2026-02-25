@@ -289,7 +289,7 @@ header.nav-scrolled {
   z-index: 3;
   color: white;
   text-align: center;
-  top: 62.5%;
+  top: 60%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   max-width: 1200px;
