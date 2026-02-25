@@ -129,6 +129,20 @@
 					<?php endif; ?>
 				</div>
 			</section>
+
+			<section class="partners">
+				<div class="container">
+					<h2>Nasi partnerzy</h2>
+
+					<div class="partners-logos flex flex-wrap justify-center gap-14">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/yonex_gray.svg" alt="Yonex" />
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pzbad_gray.svg" alt="PZBad" />
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/powiat_wielicki_gray.svg" alt="Powiat Wielicki" />
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/mbs_gray.svg" alt="Małopolski Bank Spółdzielczy" />
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/kampus_wielicki_gray.svg" alt="Kampus Wielicki" />
+					</div>
+				</div>
+			</section>
 		</main>
 		
 		<footer>
