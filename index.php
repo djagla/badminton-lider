@@ -134,7 +134,7 @@
 				<div class="container">
 					<h2>Nasi partnerzy</h2>
 
-					<div class="partners-logos flex flex-wrap justify-center gap-15">
+					<div class="partners-logos flex flex-wrap justify-center gap-x-15">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/yonex_gray.svg" alt="Yonex" />
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/pzbad_gray.svg" alt="PZBad" />
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/powiat_wielicki_gray.svg" alt="Powiat Wielicki" />
