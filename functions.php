@@ -26,11 +26,32 @@ add_theme_support( 'post-thumbnails' );
 
 
 // navbar on scroll animation
+// function theme_scripts() {
+//   wp_enqueue_script(
+//     'navbar-scroll',
+//     get_template_directory_uri() . '/assets/js/navbar.js',
+//     [],
+//     null,
+//     true
+//   );
+// }
+// add_action('wp_enqueue_scripts', 'theme_scripts');
+
 function theme_scripts() {
+
+  // GSAP
   wp_enqueue_script(
-    'navbar-scroll',
-    get_template_directory_uri() . '/assets/js/navbar.js',
+    'gsap',
+    'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js',
     [],
+    null,
+    true
+  );
+
+  wp_enqueue_script(
+    'navbar',
+    get_template_directory_uri() . '/assets/js/navbar.js',
+    ['gsap'],
     null,
     true
   );
