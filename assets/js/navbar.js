@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	const logo = document.getElementById("navbar-logo");
 	const cta = document.getElementById("navbar-cta");
 	const essentialInfo = document.getElementById("navbar-essential-info");
+	const essentialinfoContact = document.getElementById(
+		"essential-info-contact",
+	);
 
 	let lastScroll = 0;
 	let navbarHidden = false;
@@ -115,11 +118,11 @@ document.addEventListener("DOMContentLoaded", function () {
 							height: 0,
 							width: 0,
 							opacity: 0,
-							//x: 20,
+							y: -400,
 							duration: 0.25,
 							ease: "power2.out",
 							onComplete: () => {
-								cta.style.pointerEvents = "none";
+								//cta.style.pointerEvents = "none";
 							},
 						},
 						0,
@@ -130,8 +133,8 @@ document.addEventListener("DOMContentLoaded", function () {
 						navbar,
 						{
 							height: 80,
-							//backgroundColor: "rgba(28,28,28,0.85)",
-							backgroundColor: "rgba(28,28,28,1)",
+							// backgroundColor: "rgba(28,28,28,1)",
+							backgroundColor: "rgba(255,255,255,1)",
 							backdropFilter: "blur(12px)",
 							boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
 							duration: 0.3,
@@ -163,6 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
 						},
 						0,
 					);
+
 					// hide essential info
 					tl.to(
 						essentialInfo,
@@ -178,14 +182,11 @@ document.addEventListener("DOMContentLoaded", function () {
 						cta,
 						{
 							height: 40,
-							width: 286,
+							width: 287,
 							opacity: 1,
-							//x: 0,
+							y: 0,
 							duration: 0.25,
 							ease: "power2.out",
-							onStart: () => {
-								cta.style.pointerEvents = "auto";
-							},
 						},
 						0,
 					);

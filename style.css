@@ -124,6 +124,7 @@ header {
         }
 
         a:hover {
+            text-decoration: underline;
             color: #00BEFF;
         }
         
@@ -161,7 +162,10 @@ header {
                 transition: all 0.3s ease;
                 display: flex;
                 flex-direction: row;
+                justify-content: flex-end;
                 gap: 4px;
+                flex-wrap: nowrap;
+                /* overflow: hidden; */
 
                 .essential-info-contact {
                     display: flex;
@@ -170,6 +174,7 @@ header {
                     gap: 4px;
                     border-right: 1px solid white;
                     padding-right: 16px;
+                    flex-wrap: nowrap;
                 }
 
                 .essential-info-socials {
@@ -185,6 +190,15 @@ header {
             }
         }
     }
+}
+
+header.scrolled a {
+    color: #1C1C1C;
+}
+
+header.scrolled .button-link.white {
+    background-color: #1C1C1C;
+    color: #fff;
 }
 
 /* header.nav-scrolled {

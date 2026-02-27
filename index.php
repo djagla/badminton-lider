@@ -28,7 +28,7 @@
 
 				<div id="navbar-essential-info" class="essential-info">
 					<div id="navbar-cta" class="essential-info-container">
-						<div class="essential-info-contact">
+						<div id="essential-info-contact" class="essential-info-contact">
 							<span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone.svg" alt="" />+48 600 470 053</span>
 							<span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mail.svg" alt="" />biuro@badmintonlider.pl</span>
 						</div>
