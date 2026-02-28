@@ -8,6 +8,9 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
+    --container-4xl: 56rem;
+    --container-6xl: 72rem;
+    --container-7xl: 80rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -211,6 +214,15 @@
   .w-full {
     width: 100%;
   }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .max-w-6xl {
+    max-width: var(--container-6xl);
+  }
+  .max-w-7xl {
+    max-width: var(--container-7xl);
+  }
   .flex-shrink {
     flex-shrink: 1;
   }
@@ -235,14 +247,14 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
-  }
-  .items-end {
-    align-items: flex-end;
   }
   .items-start {
     align-items: flex-start;
@@ -262,11 +274,8 @@
   .gap-x-15 {
     column-gap: calc(var(--spacing) * 15);
   }
-  .gap-y-1 {
-    row-gap: calc(var(--spacing) * 1);
-  }
-  .gap-y-4 {
-    row-gap: calc(var(--spacing) * 4);
+  .gap-y-8 {
+    row-gap: calc(var(--spacing) * 8);
   }
   .gap-y-16 {
     row-gap: calc(var(--spacing) * 16);

@@ -115,7 +115,6 @@ header {
 
 			img {
 				height: 24px;
-				fill: red; /* CHYBA NIE DZIALA!!!!!1 */
 			}
         }
 
@@ -199,20 +198,38 @@ header.scrolled a {
 header.scrolled .button-link.white {
     background-color: #1C1C1C;
     color: #fff;
+
+    .button-link-icon {
+        filter: invert(100%);
+    }
 }
 
-/* header.nav-scrolled {
-    background-color: rgba(28, 28, 28, 1);
-    height: 80px;
+header.scrolled .button-link.white {
+    background-color: #1C1C1C;
+    color: #fff;
 
-    a.bl-logo img {
-        height: 60px;
+    svg {
+        filter: invert(100%);
     }
+}
 
-    .essential-info-container {
-        display: none !important;
+header.scrolled .wc-link {
+    svg {
+        filter: invert(100%);
     }
-} */
+}
+
+header.scrolled .button-link {
+    border: 1px solid #1C1C1C;
+}
+
+header.scrolled a {
+    color: #1C1C1C;
+}
+
+header.scrolled .bl-logo-letter {
+    filter: invert(100%);
+}
 
 .button-link {
     display: flex;
@@ -474,6 +491,11 @@ header.scrolled .button-link.white {
             }
         }
     }
+}
+/* END */
+
+.offer {
+    background-color: #fff;
 }
 
 .partners {
