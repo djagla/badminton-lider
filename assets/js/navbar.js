@@ -1,5 +1,5 @@
 //const ENABLE_HIDE_ON_SCROLL = themeOptions.hideOnScroll;
-const ENABLE_HIDE_ON_SCROLL = false; // Set to true to enable hide-on-scroll behavior, false to disable
+const ENABLE_HIDE_ON_SCROLL = true; // Set to true to enable hide-on-scroll behavior, false to disable
 
 document.addEventListener("DOMContentLoaded", function () {
 	const navbar = document.getElementById("navbar");
