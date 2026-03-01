@@ -168,10 +168,10 @@
 
 			<section class="offer !flex justify-center">
 				<div class="container flex flex-row gap-x-8 items-end">
-					<div class="grow-1">
+					<div style="flex: 1">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Mati.png" alt="" />
 					</div>
-					<div class="offer-description grow-1">
+					<div class="offer-description" style="flex: 1">
 						<h2>Odkryj sport, który wciąga!</h2>
 						<p>Szukasz aktywności, która poprawi Twoją kondycję, da mnóstwo frajdy i pozwoli poznać świetnych ludzi? Badminton to dynamiczna gra, która rozwija refleks, koordynację i wytrzymałość – niezależnie od wieku i poziomu zaawansowania.</p>
 						<p>Zajęcia prowadzą doświadczeni trenerzy w przyjaznej atmosferze. Pierwszy trening próbny gratis!</p>
