@@ -278,6 +278,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .fill-transparent {
+    fill: transparent;
+  }
   .text-wrap {
     text-wrap: wrap;
   }
