@@ -42,8 +42,17 @@ function theme_scripts() {
   // GSAP
   wp_enqueue_script(
     'gsap',
-    'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js',
+    'https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js',
     [],
+    null,
+    true
+  );
+
+  // GSAP TextPlugin
+  wp_enqueue_script(
+    'text-plugin',
+    'https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/TextPlugin.min.js',
+    ['gsap'],
     null,
     true
   );

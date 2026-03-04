@@ -101,7 +101,7 @@
 					</div>
 
 					<div class="flex flex-col gap-y-16 items-center">
-						<p>...sport, który wciąga</p>
+						<p class="animate-text">...sport, który wciąga</p>
 						<a class="button-link lets-play" href="">Graj z nami<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shuttlecock.svg" alt="" /></a>
 					</div>
 				</div>
@@ -323,5 +323,31 @@
 		</footer>
 
 		<?php wp_footer(); ?>
+
+		<script>
+			gsap.from('.animate-text', {
+				delay: 2.5,
+				duration: 1.5,
+				y: 50,
+				opacity: 0,
+				ease: 'power2.out'
+			});
+
+			gsap.from('.lets-play', {
+				delay: 2.5,
+				duration: 1.5,
+				y: 50,
+				opacity: 0,
+				ease: 'power2.out'
+			});
+
+			gsap.from('#navbar', {
+				delay: 2.5,
+				duration: 1.5,
+				y: -50,
+				opacity: 0,
+				ease: 'power2.out'
+			});
+		</script>
 	</body>
 </html>
