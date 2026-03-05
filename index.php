@@ -348,6 +348,13 @@
 				opacity: 0,
 				ease: 'power2.out'
 			});
+
+			gsap.from('.hero-video', {
+				delay: 3.5,
+				duration: 1.5,
+				opacity: 0,
+				ease: 'power2.out'
+			});
 		</script>
 	</body>
 </html>
