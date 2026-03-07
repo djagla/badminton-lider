@@ -96,7 +96,7 @@
 				<div class="hero-content flex flex-col gap-y-16">
 					<div class="typewriter">
 						<div>
-							<h1>BADMINTON<span>BADMINTON</span></h1>
+							<h1><span class="text-to-animate outlined"></span><span class="text-to-animate"></span></h1>
 						</div>
 					</div>
 
@@ -325,8 +325,17 @@
 		<?php wp_footer(); ?>
 
 		<script>
+			const tl = gsap.timeline({repeat: 0, yoyo: true});
+
+			tl.to('.text-to-animate', {
+				delay: 1,
+				duration: 1.25,
+				text: 'BADMINTON',
+				ease: 'power1.out'
+			});
+
 			gsap.from('.animate-text', {
-				delay: 2.5,
+				delay: 3,
 				duration: 1.5,
 				y: 50,
 				opacity: 0,
@@ -334,7 +343,7 @@
 			});
 
 			gsap.from('.lets-play', {
-				delay: 2.5,
+				delay: 3,
 				duration: 1.5,
 				y: 50,
 				opacity: 0,
@@ -342,7 +351,7 @@
 			});
 
 			gsap.from('#navbar', {
-				delay: 2.5,
+				delay: 3,
 				duration: 1.5,
 				y: -50,
 				opacity: 0,
@@ -350,7 +359,7 @@
 			});
 
 			gsap.from('.hero-video', {
-				delay: 3.5,
+				delay: 4,
 				duration: 1.5,
 				opacity: 0,
 				ease: 'power2.out'
