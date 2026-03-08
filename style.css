@@ -339,6 +339,7 @@ header.scrolled .bl-logo-letter {
         font-family: Fugaz One, monospace;
         font-size: 10rem;
         position: relative;
+        overflow-wrap: anywhere;
 
         span.outlined {
             position: relative;
@@ -348,6 +349,7 @@ header.scrolled .bl-logo-letter {
         
         span {
             position: absolute;
+            top: 10px;
             left: 0;
             color: white;
         }
