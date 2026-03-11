@@ -323,7 +323,7 @@ header.scrolled .bl-logo-letter {
   z-index: 3;
   color: white;
   text-align: center;
-  top: 62.5%;
+  top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   max-width: 1200px;
@@ -333,6 +333,12 @@ header.scrolled .bl-logo-letter {
     font-size: 2rem;
     font-weight: 300;
   }
+}
+
+.hero-content-cta {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 224px);
 }
 
 .typewriter {
@@ -358,29 +364,6 @@ header.scrolled .bl-logo-letter {
             left: 0;
             color: white;
         }
-    }
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-        -webkit-text-stroke: 20px rgba(0,0,0,0.25);
-    }
-
-    to {
-        width: 100%;
-        -webkit-text-stroke: 20px rgba(0,0,0,0.25);
-         padding-right: 10px;
-    }
-}
-
-@keyframes blink {
-    0% {
-        border-color: white;
-    }
-
-    50% {
-        border-color: transparent;
     }
 }
 
