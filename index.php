@@ -100,7 +100,7 @@
 						</div>
 					</div>
 
-					<div class="flex flex-col gap-y-16 items-center">
+					<div class="hero-content-cta flex flex-col gap-y-16 items-center">
 						<p class="animate-text"></p>
 						<a class="button-link lets-play" href="">Graj z nami<img src="<?php echo get_template_directory_uri(); ?>/assets/images/shuttlecock.svg" alt="" /></a>
 					</div>
