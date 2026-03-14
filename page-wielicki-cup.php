@@ -5,12 +5,63 @@
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 		<link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
 		<?php wp_head(); ?>
+
+        <style>
+            body {
+                background-color: #44003b;
+            }
+
+            .counter-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+                /* height: 100vh; */
+                padding: 80px 0;
+
+                color: white;
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .bl-logo {
+                margin-bottom: 40px;
+            }
+
+            .countdown{
+            display:flex;
+            gap:40px;
+            }
+
+            .time-box{
+            text-align:center;
+            }
+
+            .time-box span{
+            font-size:5rem;
+            font-weight:bold;
+            display:block;
+            }
+
+            .time-box p{
+            margin-top:5px;
+            font-size:14px;
+            opacity:0.7;
+            }
+        </style>
 	</head>
 
 	<body>
 		<main>
             <section class="counter-section">
-                <a id="navbar-logo" class="bl-logo" href="<?php echo get_home_url(); ?>">
+                <a class="bl-logo" href="<?php echo get_home_url(); ?>">
                     <svg style="height: 200px; width: auto;" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" width="655.30817" height="787.26343" viewBox="0 0 173.38362 208.29678" version="1.1" id="svg3932">
                         <defs id="defs3926"/>
                         <metadata id="metadata3929">
@@ -41,11 +92,47 @@
                     </svg>
                 </a>
                 <h1>Do turnieju pozostało</h1>
-                <p>30 dni</p>
+                <div class="countdown">
+                    <div class="time-box">
+                        <span id="days">00</span>
+                        <p>Dni</p>
+                    </div>
+
+                    <div class="time-box">
+                        <span id="hours">00</span>
+                        <p>Godziny</p>
+                    </div>
+
+                    <div class="time-box">
+                        <span id="minutes">00</span>
+                        <p>Minuty</p>
+                    </div>
+                </div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/16_wielicki_cup_poster_14032026.png" alt="" />
             </section>
 		</main>
 
 		<?php wp_footer(); ?>
 
+        <script>
+            const targetDate = new Date("2026-04-11T00:00:00").getTime();
+
+            function updateCountdown() {
+
+            const now = new Date().getTime();
+            const diff = targetDate - now;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 60000);
+        </script>
 	</body>
 </html>

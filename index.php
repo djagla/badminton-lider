@@ -193,9 +193,9 @@
 			<section class="wc-section !flex justify-center">
 				<div class="container flex flex-row gap-x-20 items-center">
 					<div class="wc-section-description" style="flex: 1">
-						<h2>Największy turniej badmintona w małopolsce</h2>
+						<h2>Największy turniej badmintona w Małopolsce</h2>
 						<p>Największy w Małopolsce krajowy turniej badmintona to prestiżowe wydarzenie, które co roku przyciąga czołowych zawodników z całej Polski. Zawody stanowią ważny punkt w kalendarzu badmintonowym i są okazją do rywalizacji na wysokim poziomie oraz promocji sportu w regionie.</p>
-						<a class="button-link dark" href="">
+						<a class="button-link dark" href="<?php echo get_home_url(); ?>/wielicki-cup">
 							Dowiedz się więcej
 							<svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.47103H6.78041L4.58509 6.66634L5.52781 7.60906L9.3325 3.80437L5.52781 0L4.58509 0.942719L6.78031 3.13769H0V4.47103Z" fill="#1C1C1C"/>
