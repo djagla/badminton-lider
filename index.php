@@ -392,26 +392,50 @@
 				ease: 'power1.out'
 			});
 
-			gsap.from('.lets-play', {
+			// gsap.from('.lets-play', {
+			// 	delay: 3.75,
+			// 	duration: 1.5,
+			// 	y: 50,
+			// 	opacity: 0,
+			// 	ease: 'power2.out'
+			// });
+
+			gsap.to('.lets-play', {
 				delay: 3.75,
 				duration: 1.5,
-				y: 50,
-				opacity: 0,
+				y: 0,
+				opacity: 1,
 				ease: 'power2.out'
 			});
 
-			gsap.from('#navbar', {
+
+			// gsap.from('#navbar', {
+			// 	delay: 3.75,
+			// 	duration: 1.5,
+			// 	y: -50,
+			// 	opacity: 0,
+			// 	ease: 'power2.out'
+			// });
+
+			gsap.to('#navbar', {
 				delay: 3.75,
 				duration: 1.5,
-				y: -50,
-				opacity: 0,
+				y: 0,
+				opacity: 1,
 				ease: 'power2.out'
 			});
 
-			gsap.from('.hero-video', {
+			// gsap.from('.hero-video', {
+			// 	delay: 5,
+			// 	duration: 1.5,
+			// 	opacity: 0,
+			// 	ease: 'power2.out'
+			// });
+
+			gsap.to('.hero-video', {
 				delay: 5,
 				duration: 1.5,
-				opacity: 0,
+				opacity: 1,
 				ease: 'power2.out'
 			});
 		</script>
