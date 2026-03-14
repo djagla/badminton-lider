@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	let navbarHidden = false;
 	let compact = false;
 
-	//gsap.set(navbar, { y: 0 });
+	gsap.set(navbar, { y: -50 });
 	gsap.set(inner, { height: 96 }); // h-24
 
 	window.addEventListener(
