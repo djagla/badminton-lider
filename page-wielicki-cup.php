@@ -17,7 +17,6 @@
                 align-items: center;
                 justify-content: center;
                 gap: 40px;
-                /* height: 100vh; */
                 padding: 80px 0;
 
                 color: white;
@@ -36,24 +35,25 @@
             }
 
             .countdown{
-            display:flex;
-            gap:40px;
+                display:flex;
+                gap:40px;
+                margin-bottom: 40px;
             }
 
             .time-box{
-            text-align:center;
+                text-align:center;
             }
 
             .time-box span{
-            font-size:5rem;
-            font-weight:bold;
-            display:block;
+                font-size:5rem;
+                font-weight:bold;
+                display:block;
             }
 
             .time-box p{
-            margin-top:5px;
-            font-size:14px;
-            opacity:0.7;
+                margin-top:5px;
+                font-size:14px;
+                opacity:0.7;
             }
         </style>
 	</head>

@@ -41,20 +41,38 @@
 							'menu_class'     => 'nav-menu',
 						) );
 					?>
+					<div class="relative">
+						<a class="button-link wc-link" href="<?php echo get_home_url(); ?>/wielicki-cup">
+							<svg xmlns="http://www.w3.org/2000/svg" width="26" height="32" viewBox="0 0 26 32" fill="none">
+								<path d="M17.3822 22.1362L13.1723 20.6411L9.08641 22.1177L9.73642 26.8639L13.1728 29.7234L16.7386 26.8063L17.3822 22.1362ZM15.5164 22.5042L13.2309 23.1821L10.8686 22.4154L13.115 21.5256L15.5164 22.5042ZM16.2015 23.1614L15.828 26.2362L13.2817 28.001L13.2704 28.0934L13.2597 28.0161L10.4352 26.1146L9.94692 23.0518L12.7498 24.3559L13.2597 28.0161L13.2817 28.001L13.7191 24.3829L16.2015 23.1614Z" fill="white"/>
+								<path d="M8.5975 6.0285L4.37031 2.58778L2.12285 6.18604L9.0796 19.7748L10.2575 20.1422L11.0997 19.4177C10.571 15.1904 9.45119 10.3865 8.5975 6.0285ZM7.50693 7.25398L10.6953 18.8277L10.2018 19.3167L5.5298 6.07034L7.50693 7.25398ZM4.85551 6.98634L10.0019 19.3458L9.18908 19.1019L4.36269 7.74026L4.85551 6.98634Z" fill="white"/>
+								<path d="M21.6153 2.38342L17.1772 5.44429L15.2013 19.2654L16.2908 20.2542L17.3597 19.6925L24.0381 5.86804L21.6153 2.38342ZM21.4346 5.84903L22.0873 6.81801L17.239 18.9142L16.5647 19.5094L21.4346 5.84903ZM20.3567 5.79019L16.3782 19.4577L15.6651 18.576L18.3178 6.64866L20.3567 5.79019Z" fill="white"/>
+								<path d="M12.9766 0L9.74222 4.48111L11.9814 18.7108L13.1995 19.1024L14.3063 18.5872L16.2167 4.32373L12.9766 0ZM13.4316 4.45578L14.6421 5.63574L13.9345 17.8892L13.2889 18.3015L13.4316 4.45578ZM12.4959 4.48046L13.0531 18.3081L12.2885 17.9665L11.1961 5.67981L12.4959 4.48046Z" fill="white"/>
+								<path d="M18.3174 19.2791C23.1754 17.1498 26.8968 9.54118 22.3693 11.6322C29.0414 5.50699 25.8286 17.1119 18.3174 19.2791Z" fill="white"/>
+								<path d="M7.68261 19.2791C2.82464 17.1498 -0.896784 9.54118 3.63068 11.6322C-3.04135 5.50699 0.171371 17.1119 7.68261 19.2791Z" fill="white"/>
+								<path d="M8.0043 30.5352C12.8686 32.6504 21.0461 30.2366 16.4335 28.3372C25.4976 29.0821 14.6875 34.5649 8.0043 30.5352Z" fill="white"/>
+							</svg>
 
-					<a class="button-link wc-link" href="<?php echo get_home_url(); ?>/wielicki-cup">
-						<svg xmlns="http://www.w3.org/2000/svg" width="26" height="32" viewBox="0 0 26 32" fill="none">
-							<path d="M17.3822 22.1362L13.1723 20.6411L9.08641 22.1177L9.73642 26.8639L13.1728 29.7234L16.7386 26.8063L17.3822 22.1362ZM15.5164 22.5042L13.2309 23.1821L10.8686 22.4154L13.115 21.5256L15.5164 22.5042ZM16.2015 23.1614L15.828 26.2362L13.2817 28.001L13.2704 28.0934L13.2597 28.0161L10.4352 26.1146L9.94692 23.0518L12.7498 24.3559L13.2597 28.0161L13.2817 28.001L13.7191 24.3829L16.2015 23.1614Z" fill="white"/>
-							<path d="M8.5975 6.0285L4.37031 2.58778L2.12285 6.18604L9.0796 19.7748L10.2575 20.1422L11.0997 19.4177C10.571 15.1904 9.45119 10.3865 8.5975 6.0285ZM7.50693 7.25398L10.6953 18.8277L10.2018 19.3167L5.5298 6.07034L7.50693 7.25398ZM4.85551 6.98634L10.0019 19.3458L9.18908 19.1019L4.36269 7.74026L4.85551 6.98634Z" fill="white"/>
-							<path d="M21.6153 2.38342L17.1772 5.44429L15.2013 19.2654L16.2908 20.2542L17.3597 19.6925L24.0381 5.86804L21.6153 2.38342ZM21.4346 5.84903L22.0873 6.81801L17.239 18.9142L16.5647 19.5094L21.4346 5.84903ZM20.3567 5.79019L16.3782 19.4577L15.6651 18.576L18.3178 6.64866L20.3567 5.79019Z" fill="white"/>
-							<path d="M12.9766 0L9.74222 4.48111L11.9814 18.7108L13.1995 19.1024L14.3063 18.5872L16.2167 4.32373L12.9766 0ZM13.4316 4.45578L14.6421 5.63574L13.9345 17.8892L13.2889 18.3015L13.4316 4.45578ZM12.4959 4.48046L13.0531 18.3081L12.2885 17.9665L11.1961 5.67981L12.4959 4.48046Z" fill="white"/>
-							<path d="M18.3174 19.2791C23.1754 17.1498 26.8968 9.54118 22.3693 11.6322C29.0414 5.50699 25.8286 17.1119 18.3174 19.2791Z" fill="white"/>
-							<path d="M7.68261 19.2791C2.82464 17.1498 -0.896784 9.54118 3.63068 11.6322C-3.04135 5.50699 0.171371 17.1119 7.68261 19.2791Z" fill="white"/>
-							<path d="M8.0043 30.5352C12.8686 32.6504 21.0461 30.2366 16.4335 28.3372C25.4976 29.0821 14.6875 34.5649 8.0043 30.5352Z" fill="white"/>
-						</svg>
+							Wielicki Cup
+						</a>
 
-						Wielicki Cup
-					</a>
+						<div class="wc-countdown">
+							<div class="time-box">
+								<span id="days">00</span>
+								<p>dni</p>
+							</div>
+
+							<div class="time-box">
+								<span id="hours">00</span>
+								<p>godz.</p>
+							</div>
+
+							<div class="time-box">
+								<span id="minutes">00</span>
+								<p>min.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div id="navbar-essential-info" class="essential-info">
@@ -203,7 +221,7 @@
 						</a>
 					</div>
 
-					<div style="flex: 1" class="flex flex-col justify-center items-center">
+					<div style="flex: 1" class="flex flex-col gap-20  justify-center items-center">
 						<svg xmlns="http://www.w3.org/2000/svg" width="403" height="504" viewBox="0 0 403 504" fill="none">
 							<path d="M9.27768 390.713L0 327.072H13.6437L19.283 371.802L38.748 327.072H53.2102L60.0321 371.621L78.8603 327.072H93.6864L64.7619 390.713H50.8453L43.5687 348.346L23.9219 390.713H9.27768Z" fill="white"/>
 							<path d="M90.4936 390.713L100.499 327.072H113.961L103.955 390.713H90.4936Z" fill="white"/>
@@ -242,6 +260,26 @@
 							</linearGradient>
 							</defs>
 						</svg>
+
+						<div class="flex flex-col gap-4 justify-center items-center">
+							<h3>Do turnieju pozostało</h3>
+							<div class="wc-countdown-2">
+								<div class="time-box">
+									<span id="days2">00</span>
+									<p>dni</p>
+								</div>
+
+								<div class="time-box">
+									<span id="hours2">00</span>
+									<p>godz.</p>
+								</div>
+
+								<div class="time-box">
+									<span id="minutes2">00</span>
+									<p>min.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -471,5 +509,29 @@
 				ease: 'power2.out'
 			});
 		</script>
+
+		<script>
+            const targetDate = new Date("2026-04-11T00:00:00").getTime();
+
+            function updateCountdown() {
+
+            const now = new Date().getTime();
+            const diff = targetDate - now;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+			document.getElementById("days2").textContent = days;
+            document.getElementById("hours2").textContent = hours;
+            document.getElementById("minutes2").textContent = minutes;
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 60000);
+        </script>
 	</body>
 </html>

@@ -590,6 +590,14 @@ header.scrolled .bl-logo-letter {
             margin-bottom: 36px;
         }
     }
+
+    h3 {
+        color: white;
+    }
+
+    svg {
+        height: 350px;
+    }
 }
 
 .wc-section::before {
@@ -722,3 +730,62 @@ footer {
         width: 9.33px;
     }
 }
+
+
+.wc-countdown {
+    display: flex;
+    gap: 8px;
+    color: #fff;
+    margin-top: 8px;
+    justify-content: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    .time-box {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .time-box span {
+        font-size: 12px;
+        font-weight: bold;
+        display: block;
+    }
+
+    .time-box p {
+        font-size: 12px;
+        opacity: 0.7;
+    }
+}
+
+.scrolled .wc-countdown {
+    display: none;
+}
+
+.wc-countdown-2{
+    display: flex;
+    gap: 40px;
+    color: white;
+
+    .time-box{
+        text-align: center;
+    }
+
+    .time-box span {
+        font-size: 5rem;
+        font-weight: bold;
+        display: block;
+    }
+
+    .time-box p {
+        margin-top: 6px;
+        font-size: 14px;
+        opacity: 0.7;
+    }
+}
+
