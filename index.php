@@ -209,7 +209,7 @@
 			</section>
 
 			<section class="wc-section !flex justify-center">
-				<div class="container flex flex-row gap-x-20 items-center">
+				<div class="container flex flex-row gap-x-18 items-center">
 					<div class="wc-section-description" style="flex: 1">
 						<h2>Największy turniej badmintona w Małopolsce</h2>
 						<p>Największy w Małopolsce krajowy turniej badmintona to prestiżowe wydarzenie, które co roku przyciąga czołowych zawodników z całej Polski. Zawody stanowią ważny punkt w kalendarzu badmintonowym i są okazją do rywalizacji na wysokim poziomie oraz promocji sportu w regionie.</p>
