@@ -288,7 +288,7 @@
 				<div class="container">
 					<h2>Nasi partnerzy</h2>
 
-					<div class="partners-logos flex flex-wrap justify-center gap-x-15">
+					<div class="partners-logos flex flex-wrap justify-center gap-x-18">
 						<svg xmlns="http://www.w3.org/2000/svg" width="225" height="60" viewBox="0 0 225 60" fill="none">
 							<path d="M0 29.8435H142.405V16.5434L157.101 44.3243V29.8435H225V60H0V29.8435Z" fill="#555555"/>
 							<path d="M157.059 30H225V0H0V30H142.405V16.6998L157.101 44.4808V30" fill="#555555"/>
