@@ -271,12 +271,12 @@
 
 								<div class="time-box">
 									<span id="hours2">00</span>
-									<p>godz.</p>
+									<p>godziny</p>
 								</div>
 
 								<div class="time-box">
 									<span id="minutes2">00</span>
-									<p>min.</p>
+									<p>minuty</p>
 								</div>
 							</div>
 						</div>
