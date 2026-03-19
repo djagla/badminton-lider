@@ -33,7 +33,7 @@
 					</svg>
 				</a>
 				
-				<div id="____navbar-inner" class="main-nav-wrapper">
+				<div class="main-nav-wrapper">
 					<?php
 						wp_nav_menu( array(
 							'menu' => 'main_navigation',

@@ -500,10 +500,21 @@ header.scrolled .bl-logo-letter {
         z-index: 2;
         max-width: 1200px;
         padding-top: 60px;
+        overflow: hidden;
+        position: relative;
+    }
 
-        background-image: url('assets/images/bg-shape.svg');
-        background-repeat: no-repeat;
-        background-position: 375px 0;
+    .container::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        width: 600px;
+        height: 200%;
+        z-index: -1;
+        background-color: white;
+        transform: translateY(-50%) rotate(15deg);
     }
 
     .offer-description {
@@ -513,9 +524,6 @@ header.scrolled .bl-logo-letter {
             font-size: 4rem;
             line-height: 4rem;
             margin-bottom: 60px;
-
-            /* font-size: 3rem;
-            line-height: 3.5rem; */
         }
 
         p {
