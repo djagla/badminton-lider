@@ -555,8 +555,6 @@ header.scrolled .bl-logo-letter {
     background-position: top right;
     background-size: auto 80%;
     z-index: 1;
-
-    /* background-color: #00BEFF; */
 }
 
 .wc-section {
@@ -634,16 +632,16 @@ header.scrolled .bl-logo-letter {
 }
 
 .wc-section-video {
-  position: absolute;
-  top: 50%;
-  left: 90%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  /* z-index: 0; */
+  	position: absolute;
+	top: 50%;
+	left: 90%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+	background-color: #00BEFF;
 }
 
 .partners {
