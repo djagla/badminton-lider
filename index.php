@@ -61,12 +61,10 @@
 								<span id="days">00</span>
 								<p>dni</p>
 							</div>
-
 							<div class="time-box">
 								<span id="hours">00</span>
 								<p>godz.</p>
 							</div>
-
 							<div class="time-box">
 								<span id="minutes">00</span>
 								<p>min.</p>
@@ -81,13 +79,11 @@
 							<span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone.svg" alt="" />+48 600 470 053</span>
 							<span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mail.svg" alt="" />biuro@badmintonlider.pl</span>
 						</div>
-
 						<div class="essential-info-socials">
 							<a class="icon-button-link" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="" /></a>
 							<a class="icon-button-link" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.svg" alt="" /></a>
 						</div>
 					</div>
-
 					<a class="button-link white" href="">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 							<path d="M6 11C6 10.7348 6.10536 10.4804 6.29289 10.2929C6.48043 10.1054 6.73478 10 7 10C7.26522 10 7.51957 10.1054 7.70711 10.2929C7.89464 10.4804 8 10.7348 8 11C8 11.2652 7.89464 11.5196 7.70711 11.7071C7.51957 11.8946 7.26522 12 7 12C6.73478 12 6.48043 11.8946 6.29289 11.7071C6.10536 11.5196 6 11.2652 6 11ZM7 14C6.73478 14 6.48043 14.1054 6.29289 14.2929C6.10536 14.4804 6 14.7348 6 15C6 15.2652 6.10536 15.5196 6.29289 15.7071C6.48043 15.8946 6.73478 16 7 16C7.26522 16 7.51957 15.8946 7.70711 15.7071C7.89464 15.5196 8 15.2652 8 15C8 14.7348 7.89464 14.4804 7.70711 14.2929C7.51957 14.1054 7.26522 14 7 14ZM10 11C10 10.7348 10.1054 10.4804 10.2929 10.2929C10.4804 10.1054 10.7348 10 11 10C11.2652 10 11.5196 10.1054 11.7071 10.2929C11.8946 10.4804 12 10.7348 12 11C12 11.2652 11.8946 11.5196 11.7071 11.7071C11.5196 11.8946 11.2652 12 11 12C10.7348 12 10.4804 11.8946 10.2929 11.7071C10.1054 11.5196 10 11.2652 10 11ZM11 14C10.7348 14 10.4804 14.1054 10.2929 14.2929C10.1054 14.4804 10 14.7348 10 15C10 15.2652 10.1054 15.5196 10.2929 15.7071C10.4804 15.8946 10.7348 16 11 16C11.2652 16 11.5196 15.8946 11.7071 15.7071C11.8946 15.5196 12 15.2652 12 15C12 14.7348 11.8946 14.4804 11.7071 14.2929C11.5196 14.1054 11.2652 14 11 14ZM14 11C14 10.7348 14.1054 10.4804 14.2929 10.2929C14.4804 10.1054 14.7348 10 15 10C15.2652 10 15.5196 10.1054 15.7071 10.2929C15.8946 10.4804 16 10.7348 16 11C16 11.2652 15.8946 11.5196 15.7071 11.7071C15.5196 11.8946 15.2652 12 15 12C14.7348 12 14.4804 11.8946 14.2929 11.7071C14.1054 11.5196 14 11.2652 14 11ZM2 7C2 5.67392 2.52678 4.40215 3.46447 3.46447C4.40215 2.52678 5.67392 2 7 2H17C18.3261 2 19.5979 2.52678 20.5355 3.46447C21.4732 4.40215 22 5.67392 22 7V17C22 18.3261 21.4732 19.5979 20.5355 20.5355C19.5979 21.4732 18.3261 22 17 22H7C5.67392 22 4.40215 21.4732 3.46447 20.5355C2.52678 19.5979 2 18.3261 2 17V7ZM7 4C6.37935 3.99967 5.77387 4.19186 5.26702 4.55006C4.76016 4.90826 4.37688 5.41484 4.17 6H19.83C19.6231 5.41484 19.2398 4.90826 18.733 4.55006C18.2261 4.19186 17.6207 3.99967 17 4H7ZM20 8H4V17C4 17.7956 4.31607 18.5587 4.87868 19.1213C5.44129 19.6839 6.20435 20 7 20H17C17.7956 20 18.5587 19.6839 19.1213 19.1213C19.6839 18.5587 20 17.7956 20 17V8Z" fill="#1C1C1C"/>
@@ -105,7 +101,6 @@
 						src="<?php echo get_template_directory_uri(); ?>/assets/video/hero_hd.mp4"
 						type="video/mp4"
 					/>
-
 					Your browser does not support the video tag.
 				</video>
 
@@ -117,7 +112,6 @@
 							<h1><span class="text-to-animate outlined"></span><span class="text-to-animate"></span></h1>
 						</div>
 					</div>
-
 					<div class="hero-content-cta flex flex-col gap-y-16 items-center">
 						<p class="animate-text"></p>
 						<a class="button-link lets-play" href="<?php echo get_home_url(); ?>/oferta">
@@ -288,7 +282,6 @@
 							src="<?php echo get_template_directory_uri(); ?>/assets/video/wc.mp4"
 							type="video/mp4"
 						/>
-
 						Your browser does not support the video tag.
 					</video>
 				</div>
@@ -297,7 +290,6 @@
 			<section class="partners">
 				<div class="container">
 					<h2>Nasi partnerzy</h2>
-
 					<div class="partners-logos flex flex-wrap justify-center gap-x-18">
 						<svg xmlns="http://www.w3.org/2000/svg" width="225" height="60" viewBox="0 0 225 60" fill="none">
 							<path d="M0 29.8435H142.405V16.5434L157.101 44.3243V29.8435H225V60H0V29.8435Z" fill="#555555"/>
@@ -449,13 +441,11 @@
 						<p>Tel: +48 600 470 053</p>
 						<p>Email: biuro@badmintonlider.pl</p>
 					</div>
-
 					<div>
 						<p>IBAN: 42150014587384192385828915</p>
 						<p>NIP: 6832112882</p>
 						<p class="flex gap-x-4">KRS: 0000270261 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/1_5_percent.svg" alt="" /></p>
 					</div>
-
 					<div class="flex justify-center grow">
 						<a class="button-link" href="">
 							Napisz do nas
@@ -464,7 +454,6 @@
 							</svg>
 						</a>
 					</div>
-
 					<div class="socials flex justify-end">
 						<a class="icon-button-link" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="" /></a>
 						<a class="icon-button-link" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.svg" alt="" /></a>
