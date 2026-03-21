@@ -138,7 +138,7 @@
 					<?php 
 						$args = array(
 							'post_type'      => 'post',
-							'posts_per_page' => 4, // 👈 number of posts
+							'posts_per_page' => 5, // 👈 number of posts
 						);
 
 						$query = new WP_Query($args);
