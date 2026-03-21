@@ -77,6 +77,7 @@ h2 {
 
 header {
     height: 120px;
+    color: #fff;
 
     nav {
         display: flex;
@@ -144,7 +145,6 @@ header {
                 flex-direction: row;
                 align-items: center;
                 gap: 8px;
-                color: #fff;
                 font-size: 0.875rem;
 
                 img {
@@ -159,7 +159,6 @@ header {
                 justify-content: flex-end;
                 gap: 4px;
                 flex-wrap: nowrap;
-                /* overflow: hidden; */
 
                 .essential-info-contact {
                     display: flex;
@@ -175,7 +174,6 @@ header {
                     display: flex;
                     flex-direction: row;
                     gap: 0;
-                    /* padding-left: 8px; */
 
                     img {
                         width: 24px;
@@ -227,6 +225,51 @@ header.scrolled a {
 }
 
 header.scrolled .bl-logo-letter {
+    filter: invert(100%);
+}
+
+header.page-header {
+    background-color: #fff;
+    color: #1C1C1C;
+}
+
+header.page-header a {
+    color: #1C1C1C;
+}
+
+header.page-header .button-link.white {
+    background-color: #1C1C1C;
+    color: #fff;
+
+    .button-link-icon {
+        filter: invert(100%);
+    }
+}
+
+header.page-header .button-link.white {
+    background-color: #1C1C1C;
+    color: #fff;
+
+    svg {
+        filter: invert(100%);
+    }
+}
+
+header.page-header .wc-link {
+    svg {
+        filter: invert(100%);
+    }
+}
+
+header.page-header .button-link {
+    border: 1px solid #1C1C1C;
+}
+
+header.spage-header a {
+    color: #1C1C1C;
+}
+
+header.page-header .bl-logo-letter {
     filter: invert(100%);
 }
 
@@ -570,7 +613,6 @@ header.scrolled .bl-logo-letter {
 
     .wc-section-container {    
         position: relative;
-        /* background-color: #00BEFF; */
         overflow: hidden;
     }
 
@@ -656,6 +698,7 @@ header.scrolled .bl-logo-letter {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+    width: 100%;
     padding: 80px 40px 80px 40px;
     background-color: #fff;
     border-top: 1px solid #cccccc;
@@ -691,7 +734,6 @@ header.scrolled .bl-logo-letter {
 
 footer {
     background-color: #1C1C1C;
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -711,25 +753,27 @@ footer {
         line-height: 1.5rem;
     }
 
-    section {
+    section.contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 1200px;
+        padding: 80px 0 40px 0;
+        gap: 32px;
+        color: white;
+    }
+
+    section.copyright {
         display: flex;
         justify-content: flex-start;
         width: 100%;
         max-width: 1200px;
-    }
-
-    section.contact-info {
-        display: flex;
-        flex-direction: column;
-        padding: 80px 0 40px 0;
-        gap: 32px;
-    }
-
-    section.copyright {
         justify-content: center;
         padding: 24px 0;
         font-size: 0.875rem;
-        border-top: 1px solid rgba(255,255,255,0.25)
+        border-top: 1px solid rgba(255,255,255,0.25);
+        color: white;
     }
 }
 
