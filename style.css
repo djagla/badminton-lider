@@ -312,12 +312,11 @@ header.page-header .bl-logo-letter {
 }
 
 .lets-play {
-    /* background-color: rgba(0,0,0,0.25); */
     background-color: #00A85C;
     border: none;
     font-size: 1.25rem;
-    height: 48px;
-    border-radius: 24px;
+    height: 56px;
+    border-radius: 28px;
 
     opacity: 0;
     transform: translateY(50px);
