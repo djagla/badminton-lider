@@ -300,7 +300,7 @@
 			</section>
 
 			<section class="copyright">
-				&copy; <?php echo date('Y'); ?> Badminton Lider Wieliczka & DJ
+				&copy; <?php echo date('Y'); ?> Badminton Lider Wieliczka
 			</section>
 		</footer>
 
