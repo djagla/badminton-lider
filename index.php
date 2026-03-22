@@ -54,6 +54,7 @@
 							</svg>
 
 							Wielicki Cup
+							<span class="shine"></span>
 						</a>
 
 						<div class="wc-countdown">
@@ -531,5 +532,20 @@
             updateCountdown();
             setInterval(updateCountdown, 60000);
         </script>
+
+		<script>
+			gsap.fromTo(
+			'.shine',
+			{ x: '-150%' },
+			{
+				x: '450%',
+				delay: 5,
+				duration: 1,
+				ease: 'power2.out',
+				repeat: -1,        // infinite loop
+				repeatDelay: 6     // delay between shines
+			}
+			);
+		</script>
 	</body>
 </html>

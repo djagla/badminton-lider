@@ -118,6 +118,23 @@ header {
             height: 32px;
         }
 
+        /* shine element */
+        .shine {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                transparent,
+                rgba(255,255,255,0.6),
+                transparent
+            );
+            transform: skewX(-20deg);
+            pointer-events: none;
+        }
+
         a:hover {
             text-decoration: underline;
             color: #00BEFF;
@@ -309,6 +326,10 @@ header.page-header .bl-logo-letter {
 
 .wc-link {
     padding: 0 16px;
+
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .lets-play {
@@ -864,6 +885,15 @@ footer {
         font-size: 12px;
         opacity: 0.7;
     }
+}
+
+.scrolled .shine {
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(0,0,0,0.10),
+        transparent
+    );
 }
 
 .scrolled .wc-countdown {
