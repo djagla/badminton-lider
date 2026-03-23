@@ -201,6 +201,20 @@ header {
     }
 }
 
+header.page-header { 
+    .essential-info {
+        svg {
+            filter: invert(100%);
+        }
+        
+        .essential-info-container {
+            .essential-info-contact {
+                border-right: 1px solid #1c1c1c;
+            }
+        }
+    }
+}
+
 header#navbar {
     opacity: 0;
 }
@@ -897,7 +911,7 @@ footer {
 }
 
 .scrolled .wc-countdown {
-    display: none;
+    display: none;t
 }
 
 .wc-countdown-2{
