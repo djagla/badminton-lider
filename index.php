@@ -158,7 +158,12 @@
 						while ($query->have_posts()) : $query->the_post();
 					?>
 							
-						<div class="news-item">
+						<div class="news-item">							
+							<?php if ( has_category() ) : ?>
+								<div class="category-label">
+									<?php the_category(null, 'single', null) ?>
+								</div>
+							<?php endif; ?>
 							<a href="<?php the_permalink(); ?>">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<div class="news-item-thumbnail">
@@ -173,11 +178,6 @@
 									</span>
 								</div>
 							</a>
-							<?php if ( has_category() ) : ?>
-								<div class="category-label">
-									<?php the_category(null, 'single', null) ?>
-								</div>
-							<?php endif; ?>
 						</div>
 							
 					<?php 
