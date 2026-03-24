@@ -157,29 +157,27 @@
 						if ($query->have_posts()) :
 						while ($query->have_posts()) : $query->the_post();
 					?>
+							
 						<div class="news-item">
-							<?php if ( has_post_thumbnail() ) : ?>
-								<div class="news-item-thumbnail">
-									<?php the_post_thumbnail( 'medium' ); ?>
+							<a href="<?php the_permalink(); ?>">
+								<?php if ( has_post_thumbnail() ) : ?>
+									<div class="news-item-thumbnail">
+										<?php the_post_thumbnail( 'medium' ); ?>
+									</div>
+								<?php endif; ?>
+								<?php if ( has_category() ) : ?>
+									<div class="category-label <?php echo preg_replace('/\s+/', '', get_cat_name( get_the_category()[0]->term_id )); ?>">
+										<?php the_category(null, 'single', null) ?>
+									</div>
+								<?php endif; ?>
+								<div class="news-item-content">
+									<p class="news-date"><?php the_date(); ?></p>
+									<h3><?php the_title(); ?></h3>
+									<img class="read-more" src="<?php echo get_template_directory_uri(); ?>/assets/images/right_arrow.svg" alt="Czytaj więcej" />
 								</div>
-							<?php endif; ?>
-
-							<?php if ( has_category() ) : ?>
-								<div class="category-label <?php echo preg_replace('/\s+/', '', get_cat_name( get_the_category()[0]->term_id )); ?>">
-									<?php the_category(null, 'single', null) ?>
-								</div>
-							<?php endif; ?>
-
-							<div class="news-item-content">
-								<p class="news-date"><?php the_date(); ?></p>
-
-								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					
-								<a class="read-more" href="<?php the_permalink(); ?>">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/right_arrow.svg" alt="Czytaj więcej" />
-								</a>
-							</div>
+							</a>
 						</div>
+							
 					<?php 
 						endwhile; 
 
