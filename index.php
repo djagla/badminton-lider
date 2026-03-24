@@ -165,7 +165,6 @@
 										<?php the_post_thumbnail( 'medium' ); ?>
 									</div>
 								<?php endif; ?>
-
 								<div class="news-item-content">
 									<p class="news-date"><?php the_date(); ?></p>
 									<h3><?php the_title(); ?></h3>
@@ -174,6 +173,11 @@
 									</span>
 								</div>
 							</a>
+							<?php if ( has_category() ) : ?>
+								<div class="category-label">
+									<?php the_category(null, 'single', null) ?>
+								</div>
+							<?php endif; ?>
 						</div>
 							
 					<?php 
