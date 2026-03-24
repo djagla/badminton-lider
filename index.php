@@ -166,7 +166,7 @@
 									</div>
 								<?php endif; ?>
 								<?php if ( has_category() ) : ?>
-									<div class="category-label <?php echo preg_replace('/\s+/', '', get_cat_name( get_the_category()[0]->term_id )); ?>">
+									<div class="category-label">
 										<?php the_category(null, 'single', null) ?>
 									</div>
 								<?php endif; ?>
