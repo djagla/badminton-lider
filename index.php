@@ -173,7 +173,9 @@
 								<div class="news-item-content">
 									<p class="news-date"><?php the_date(); ?></p>
 									<h3><?php the_title(); ?></h3>
-									<img class="read-more" src="<?php echo get_template_directory_uri(); ?>/assets/images/right_arrow.svg" alt="Czytaj więcej" />
+									<span class="read-more">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/images/right_arrow.svg" alt="Czytaj więcej" />
+									</span>
 								</div>
 							</a>
 						</div>
