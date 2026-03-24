@@ -520,6 +520,7 @@ header.page-header .bl-logo-letter {
             font-size: 0.75rem;
             color: #fff;
             background-color: #FF2C00;
+			z-index: 1;
 
             a {
                 text-decoration: none;
