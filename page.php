@@ -320,7 +320,6 @@
 			const tl = gsap.timeline({repeat: 0, yoyo: true});
 
 			gsap.to('#navbar', {
-				//delay: 1.5,
 				duration: 1.5,
 				y: 0,
 				opacity: 1,
