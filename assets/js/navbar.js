@@ -121,7 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
 						navbar,
 						{
 							height: 80,
-							// backgroundColor: "rgba(28,28,28,1)",
 							backgroundColor: "rgba(255,255,255,1)",
 							backdropFilter: "blur(12px)",
 							boxShadow: "0 4px 20px rgba(0,0,0,0.08)",
