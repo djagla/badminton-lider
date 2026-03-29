@@ -32,8 +32,19 @@
 						<path d="M41.8432 63.5042C41.9283 62.573 33.0362 63.2191 26.0008 63.0083C24.7834 63.0595 23.6295 63.2085 23.8804 65.5283C23.3244 85.3882 41.6666 83.7565 42.1539 67.0372C34.9626 85.1839 27.7222 73.6842 28.6495 66.659C32.7874 66.3273 38.3154 65.6664 41.8432 63.5042Z" fill="#00A85C"/>
 					</svg>
 				</a>
-				
-				<div class="main-nav-wrapper">
+								
+				<button id="mobile-toggle"
+				class="md:hidden flex items-center justify-center w-10 h-10 text-white"
+				aria-label="Toggle menu"
+				aria-expanded="false">
+
+					<span class="block w-6 h-[2px] bg-white mb-1 transition-all" id="line1"></span>
+					<span class="block w-6 h-[2px] bg-white mb-1 transition-all" id="line2"></span>
+					<span class="block w-6 h-[2px] bg-white transition-all" id="line3"></span>
+
+				</button>
+
+				<div class="main-nav-wrapper hidden md:flex gap-5">
 					<?php
 						wp_nav_menu( array(
 							'menu' => 'main_navigation',
@@ -74,7 +85,7 @@
 					</div>
 				</div>
 
-				<div id="navbar-essential-info" class="essential-info">
+				<div id="navbar-essential-info" class="essential-info hidden md:flex flex-col gap-4 items-end">
 					<div id="navbar-cta" class="essential-info-container">
 						<div id="essential-info-contact" class="essential-info-contact">
 							<span>
@@ -112,6 +123,35 @@
 						Treningi
 					</a>
 				</div>
+
+				<div id="mobile-menu" class="md:hidden fixed top-0 left-0 w-full h-screen bg-black/95 backdrop-blur-lg opacity-0 pointer-events-none">
+					<div class="flex flex-col items-center justify-center h-full gap-8 text-white">
+
+						<!-- MENU -->
+						<div class="mobile-nav text-2xl text-center">
+						<?php
+							wp_nav_menu([
+							'theme_location' => 'primary',
+							'container' => false,
+							'menu_class' => 'flex flex-col gap-6'
+							]);
+						?>
+						</div>
+
+						<!-- CTA / INFO -->
+						<div class="text-center">
+						<p>+48 600 470 053</p>
+						<p>biuro@badmintonlider.pl</p>
+
+						<a href="/oferta"
+							class="mt-4 inline-block px-6 py-3 bg-white text-black rounded-lg">
+							Treningi
+						</a>
+						</div>
+
+					</div>
+				</div>
+
 			</nav>
 		</header>
 		

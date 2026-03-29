@@ -202,3 +202,45 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ passive: true },
 	);
 });
+
+//MOBILE MENU
+
+const toggle = document.getElementById("mobile-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
+
+const line1 = document.getElementById("line1");
+const line2 = document.getElementById("line2");
+const line3 = document.getElementById("line3");
+
+let menuOpen = false;
+
+toggle.addEventListener("click", () => {
+	if (!menuOpen) {
+		// Show menu
+		gsap.to(mobileMenu, {
+			opacity: 1,
+			duration: 0.3,
+			pointerEvents: "auto",
+		});
+
+		// Animate hamburger → X
+		gsap.to(line1, { y: 6, rotate: 45, duration: 0.3 });
+		gsap.to(line2, { opacity: 0, duration: 0.2 });
+		gsap.to(line3, { y: -6, rotate: -45, duration: 0.3 });
+
+		menuOpen = true;
+	} else {
+		// Hide menu
+		gsap.to(mobileMenu, {
+			opacity: 0,
+			duration: 0.3,
+			pointerEvents: "none",
+		});
+
+		// Reset icon
+		gsap.to([line1, line3], { y: 0, rotate: 0, duration: 0.3 });
+		gsap.to(line2, { opacity: 1, duration: 0.2 });
+
+		menuOpen = false;
+	}
+});

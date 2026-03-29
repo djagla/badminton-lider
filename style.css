@@ -12,7 +12,7 @@ Description: Strona klubu Badminton Lider Wieliczka
 /**********************************************
     Main styles
 ***********************************************/
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -26,8 +26,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -38,7 +38,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -92,11 +92,9 @@ header {
         max-width: 1200px;;
         z-index: 4;
 
-        .main-nav-wrapper {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-        }
+        /* .main-nav-wrapper {
+
+        } */
 
         .nav-menu {
             display: flex;
@@ -143,7 +141,7 @@ header {
             text-decoration: underline;
             color: #00BEFF;
         }
-        
+
         a.bl-logo {
 			padding: 0;
         }
@@ -155,11 +153,6 @@ header {
 
         .essential-info {
             transition: all 0.3s ease;
-
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            align-items: flex-end;
 
             span {
                 display: flex;
@@ -205,12 +198,12 @@ header {
     }
 }
 
-header.page-header { 
+header.page-header {
     .essential-info {
         svg {
             filter: invert(100%);
         }
-        
+
         .essential-info-container {
             .essential-info-contact {
                 border-right: 1px solid #1c1c1c;
@@ -462,7 +455,7 @@ header.page-header .bl-logo-letter {
             color: transparent;
             -webkit-text-stroke: 20px rgba(0,0,0,0.25);
         }
-        
+
         span {
             position: absolute;
             top: 10px;
@@ -493,7 +486,7 @@ header.page-header .bl-logo-letter {
 
 		a:hover {
 			h3 {
-				text-decoration: underline; 
+				text-decoration: underline;
 			}
 		}
 
@@ -570,7 +563,7 @@ header.page-header .bl-logo-letter {
             }
 
             .read-more {
-                display: flex;          
+                display: flex;
                 align-items: center;
                 justify-content: center;
                 position: absolute;
@@ -596,7 +589,7 @@ header.page-header .bl-logo-letter {
     }
 
 .box:hover {
-  
+
 }
 
     .news-list {
@@ -699,7 +692,7 @@ header.page-header .bl-logo-letter {
     background-color: #fff;
     padding-top: 80px;
 
-    .wc-section-container {    
+    .wc-section-container {
         position: relative;
         overflow: hidden;
     }
@@ -801,7 +794,7 @@ header.page-header .bl-logo-letter {
         gap: 60px;
         align-items: center;
         /* max-width: 1200px; */
-    
+
 
         .partner-logo {
             width: 200px;
