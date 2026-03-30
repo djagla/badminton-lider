@@ -49,8 +49,19 @@
 						<path d="M41.8432 63.5042C41.9283 62.573 33.0362 63.2191 26.0008 63.0083C24.7834 63.0595 23.6295 63.2085 23.8804 65.5283C23.3244 85.3882 41.6666 83.7565 42.1539 67.0372C34.9626 85.1839 27.7222 73.6842 28.6495 66.659C32.7874 66.3273 38.3154 65.6664 41.8432 63.5042Z" fill="#00A85C"/>
 					</svg>
 				</a>
-				
-				<div class="main-nav-wrapper">
+								
+				<button id="mobile-toggle"
+				class="md:hidden flex items-center justify-center w-10 h-10 text-white"
+				aria-label="Toggle menu"
+				aria-expanded="false">
+
+					<span class="block w-6 h-[2px] bg-white mb-1 transition-all" id="line1"></span>
+					<span class="block w-6 h-[2px] bg-white mb-1 transition-all" id="line2"></span>
+					<span class="block w-6 h-[2px] bg-white transition-all" id="line3"></span>
+
+				</button>
+
+				<div class="main-nav-wrapper hidden md:flex gap-5">
 					<?php
 						wp_nav_menu( array(
 							'menu' => 'main_navigation',
@@ -71,6 +82,7 @@
 							</svg>
 
 							Wielicki Cup
+							<span class="shine"></span>
 						</a>
 
 						<div class="wc-countdown">
@@ -90,7 +102,7 @@
 					</div>
 				</div>
 
-				<div id="navbar-essential-info" class="essential-info">
+				<div id="navbar-essential-info" class="essential-info hidden md:flex flex-col gap-4 items-end">
 					<div id="navbar-cta" class="essential-info-container">
 						<div id="essential-info-contact" class="essential-info-contact">
 							<span>
@@ -107,8 +119,18 @@
 							</span>
 						</div>
 						<div class="essential-info-socials">
-							<a class="icon-button-link" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="" /></a>
-							<a class="icon-button-link" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/images/insta.svg" alt="" /></a>
+							<a class="icon-button-link" href="">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+							<a class="icon-button-link" href="">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<path d="M3 11C3 7.229 3 5.343 4.172 4.172C5.344 3.001 7.229 3 11 3H13C16.771 3 18.657 3 19.828 4.172C20.999 5.344 21 7.229 21 11V13C21 16.771 21 18.657 19.828 19.828C18.656 20.999 16.771 21 13 21H11C7.229 21 5.343 21 4.172 19.828C3.001 18.656 3 16.771 3 13V11Z" stroke="white" stroke-width="2"/>
+									<path d="M16.5 9C17.3284 9 18 8.32843 18 7.5C18 6.67157 17.3284 6 16.5 6C15.6716 6 15 6.67157 15 7.5C15 8.32843 15.6716 9 16.5 9Z" fill="white"/>
+									<path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="white" stroke-width="2"/>
+								</svg>
+							</a>
 						</div>
 					</div>
 					<a class="button-link white" href="/oferta">
@@ -118,6 +140,35 @@
 						Treningi
 					</a>
 				</div>
+
+				<div id="mobile-menu" class="md:hidden fixed top-0 left-0 w-full h-screen bg-black/95 backdrop-blur-lg opacity-0 pointer-events-none">
+					<div class="flex flex-col items-center justify-center h-full gap-8 text-white">
+
+						<!-- MENU -->
+						<div class="mobile-nav text-2xl text-center">
+						<?php
+							wp_nav_menu([
+							'theme_location' => 'primary',
+							'container' => false,
+							'menu_class' => 'flex flex-col gap-6'
+							]);
+						?>
+						</div>
+
+						<!-- CTA / INFO -->
+						<div class="text-center">
+						<p>+48 600 470 053</p>
+						<p>biuro@badmintonlider.pl</p>
+
+						<a href="/oferta"
+							class="mt-4 inline-block px-6 py-3 bg-white text-black rounded-lg">
+							Treningi
+						</a>
+						</div>
+
+					</div>
+				</div>
+
 			</nav>
 		</header>
 		
