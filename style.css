@@ -530,13 +530,13 @@ header.page-header .bl-logo-letter {
 			}
         }
 
-        .category-label.WielickiCUP {
-            background-color: #00BEFF;
-        }
-
-        .category-label.Klub {
-            background-color: #00A85C;
-        }
+		.category-label::after {
+			content: '';
+            display: block;
+			wdith: 1px;
+			height: 4px;
+			background-color: white;
+		}
 
         .news-item-content {
             position: absolute;
