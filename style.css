@@ -530,7 +530,7 @@ header.page-header .bl-logo-letter {
 			}
         }
 
-		.category-label::after {
+		.category-label a::after {
 			content: '';
             display: block;
 			wdith: 1px;
