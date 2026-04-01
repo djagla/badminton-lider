@@ -147,6 +147,10 @@ header {
 			z-index: 1;
         }
 
+		a.bl-logo:hover {
+			transform: scale(1.5);
+		}
+
         .essential-info {
             transition: all 0.3s ease;
 
