@@ -515,19 +515,21 @@ header.page-header .bl-logo-letter {
         }
 
         .category-label {
-            display: block;
             position: absolute;
             top: 4px;
             right: 4px;
             font-size: 0.75rem;
             color: #fff;
-            background-color: #FF2C00;
+            background-color: #00A85C;
+            /* background-color: #1c1c1c; */
 			z-index: 1;
 
             a {
+                position: relative;
                 text-decoration: none;
                 line-height: 1.5rem;
                 padding: 0 8px;
+                font-weight: 600;
             }
 
 			a:hover {
@@ -538,9 +540,17 @@ header.page-header .bl-logo-letter {
 		.category-label a::after {
 			content: '';
             display: block;
-			wdith: 1px;
-			height: 4px;
+			width: 1px;
+			height: 8px;
 			background-color: white;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+		}
+
+        .category-label a:last-child::after {
+			display: none;
 		}
 
         .news-item-content {

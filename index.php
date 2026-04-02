@@ -211,7 +211,7 @@
 							
 						<div class="news-item">							
 							<?php if ( has_category() ) : ?>
-								<div class="category-label">
+								<div class="category-label flex">
 									<?php the_category(null, 'single', null) ?>
 								</div>
 							<?php endif; ?>
