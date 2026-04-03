@@ -146,10 +146,14 @@ header {
         a.bl-logo {
             padding: 0;
 			z-index: 1;
+
+            svg {
+		        transition: transform 0.3s ease;
+            }
         }
 
-		a.bl-logo:hover {
-			transform: scale(1.5);
+		a.bl-logo:hover svg {
+			transform: scale(1.25);
 		}
 
         .essential-info {
@@ -477,6 +481,10 @@ header.page-header .bl-logo-letter {
         font-weight: 500;
     }
 
+    a.read-more-link:hover {
+        text-decoration: underline;
+    }
+
     .news-item {
         height: 300px;
         flex: 1;
@@ -521,7 +529,6 @@ header.page-header .bl-logo-letter {
             font-size: 0.75rem;
             color: #fff;
             background-color: #00A85C;
-            /* background-color: #1c1c1c; */
 			z-index: 1;
 
             a {
