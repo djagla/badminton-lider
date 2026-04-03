@@ -530,6 +530,7 @@ header.page-header .bl-logo-letter {
             color: #fff;
             background-color: #00A85C;
 			z-index: 1;
+            border-radius: 20px;
 
             a {
                 position: relative;
