@@ -352,6 +352,12 @@ header.page-header .bl-logo-letter {
     cursor: pointer;
 }
 
+.wc-link:hover {
+    background-color: #00BEFF;
+    border-color: #00BEFF;
+    color: #fff;
+}
+
 .lets-play {
     background-color: #00A85C;
     border: none;
