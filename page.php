@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php get_template_part('template-parts/header', null, [
+    //'title' => 'page-header',
+	'template-header' => 'page-header',
+]); ?>
 
 <?php //devstarter_acf_blocks(); ?>
 
@@ -12,5 +15,15 @@
 		?>
 	</div>
 </section>
+        <script>
+			const tl = gsap.timeline({repeat: 0, yoyo: true});
 
+			gsap.to('#navbar', {
+				//delay: 1.5,
+				duration: 1.5,
+				y: 0,
+				opacity: 1,
+				ease: 'power2.out'
+			});
+		</script>
 <?php get_footer(); ?>

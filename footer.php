@@ -200,7 +200,7 @@
 
 		<?php wp_footer(); ?>
 
-		<script>
+		<!-- <script>
 			const tl = gsap.timeline({repeat: 0, yoyo: true});
 
 			tl.to('.text-to-animate', {
@@ -239,7 +239,7 @@
 				opacity: 1,
 				ease: 'power2.out'
 			});
-		</script>
+		</script> -->
 
 		<script>
             const targetDate = new Date("2026-04-11T10:00:00").getTime();

@@ -1,3 +1,8 @@
+
+
+
+<?php $templateHeader = $args['template-header'] ?? ''; ?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -9,9 +14,9 @@
 
     <?php wp_head(); ?>
 </head>
-<body <?php body_class('bg-white text-black'); ?>>
+<body>
 
-<header id="navbar" class="!flex justify-center fixed top-0 left-0 w-full z-50 transition-colors duration-300">
+<header id="navbar" class="<?php echo $templateHeader; ?> !flex justify-center fixed top-0 left-0 w-full z-50 transition-colors duration-300">
     <nav class="main-nav">
         <a id="navbar-logo" class="bl-logo" href="<?php echo get_home_url(); ?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="66" height="80" viewBox="0 0 66 80" fill="none">
