@@ -339,6 +339,12 @@ header.page-header .bl-logo-letter {
 
 .button-link:hover {
     text-decoration: none;
+	backgroung-color: white;
+	color: #1c1c1c;
+
+	svg {
+		filter: invert(100%);
+	}
 }
 
 .button-link.white:hover {
