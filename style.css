@@ -348,6 +348,12 @@ header.page-header .bl-logo-letter {
 }
 
 .button-link.white:hover {
+	svg {
+		filter: invert(0%);
+	}
+}
+
+.button-link.white:hover {
     svg path{
         fill: white;
     }
@@ -370,6 +376,10 @@ header.page-header .bl-logo-letter {
     background-color: #00BEFF;
     border-color: #00BEFF;
     color: #fff;
+
+    svg {
+        filter: invert(0%);
+    }
 }
 
 .lets-play {
