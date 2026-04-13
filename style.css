@@ -237,27 +237,21 @@ header.scrolled a:hover {
     color: #1C1C1C;
 }
 
-header.scrolled .button-link.white {
-    background-color: #1C1C1C;
-    color: #fff;
-
-    .button-link-icon {
-        filter: invert(100%);
-    }
-}
-
-header.scrolled .button-link.white {
-    background-color: #1C1C1C;
-    color: #fff;
+header.scrolled .button-link.wc-link {
+    background-color: transparent;
+    color: #1C1C1C;
 
     svg {
         filter: invert(100%);
     }
 }
 
-header.scrolled .wc-link {
+header.scrolled .button-link.wc-link:hover {
+    background-color: #1C1C1C;
+    color: #fff;
+
     svg {
-        filter: invert(100%);
+        filter: invert(0%);
     }
 }
 
@@ -380,6 +374,10 @@ header.page-header .bl-logo-letter {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+
+    /* svg {
+        filter: invert(0%);
+    } */
 }
 
 .wc-link:hover {
