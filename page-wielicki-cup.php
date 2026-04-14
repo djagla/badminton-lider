@@ -111,7 +111,7 @@
 		<?php wp_footer(); ?>
 
         <script>
-            const targetDate = new Date("2026-04-11T10:00:00").getTime();
+            const targetDate = new Date("2026-10-17T10:00:00").getTime();
 
             function updateCountdown() {
 
