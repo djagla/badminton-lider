@@ -104,7 +104,7 @@
                         <p>Minuty</p>
                     </div>
                 </div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/16_wielicki_cup_poster_16032026.png" alt="" />
+                <!--<img src="<?php echo get_template_directory_uri(); ?>/assets/images/16_wielicki_cup_poster_16032026.png" alt="" />-->
             </section>
 		</main>
 
