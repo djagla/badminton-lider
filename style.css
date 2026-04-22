@@ -83,6 +83,7 @@ h2 {
 header {
     height: 120px;
     color: #fff;
+    padding-top: 16px;
 
     nav {
         display: flex;
@@ -227,6 +228,10 @@ header#navbar {
 
 header#navbar.page-header {
     opacity: 1;
+}
+
+header.scrolled {
+    padding-top: 0;
 }
 
 header.scrolled a {
