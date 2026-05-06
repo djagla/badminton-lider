@@ -279,7 +279,7 @@
 							</a>
 						</div>
 
-						<div style="flex: 1" class="flex flex-col gap-20  justify-center items-center">
+						<div style="flex: 1" class="wc-logo flex flex-col gap-20  justify-center items-center">
 							<svg xmlns="http://www.w3.org/2000/svg" width="403" height="504" viewBox="0 0 403 504" fill="none">
 								<path d="M9.27768 390.713L0 327.072H13.6437L19.283 371.802L38.748 327.072H53.2102L60.0321 371.621L78.8603 327.072H93.6864L64.7619 390.713H50.8453L43.5687 348.346L23.9219 390.713H9.27768Z" fill="white"/>
 								<path d="M90.4936 390.713L100.499 327.072H113.961L103.955 390.713H90.4936Z" fill="white"/>
@@ -342,7 +342,7 @@
 					</div>
 					<video class="wc-section-video" autoplay muted loop playsinline>
 						<source
-							src="<?php echo get_template_directory_uri(); ?>/assets/video/wc.mp4"
+							src="<?php echo get_template_directory_uri(); ?>/assets/video/wc_clip.mp4"
 							type="video/mp4"
 						/>
 						Your browser does not support the video tag.
