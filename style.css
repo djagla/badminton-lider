@@ -842,7 +842,7 @@ header.page-header .bl-logo-letter {
   	position: absolute;
 	top: 50%;
 	left: 65%;
-	/* min-width: 100%; */
+	min-width: auto;
 	min-height: 100%;
 	width: auto;
 	height: 100%;
