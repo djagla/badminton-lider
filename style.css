@@ -767,6 +767,7 @@ header.page-header .bl-logo-letter {
 .wc-section {
     background-color: #fff;
     padding-top: 80px;
+	position: relative;
 
     .wc-section-container {
         position: relative;
@@ -841,12 +842,12 @@ header.page-header .bl-logo-letter {
 .wc-section-video {
   	position: absolute;
 	top: 50%;
-	left: 66%;
+	right: 0;
 	min-width: auto;
 	min-height: 100%;
 	width: auto;
 	height: 100%;
-	transform: translate(-50%, -50%);
+	transform: translate(0, -50%);
 	object-fit: cover;
 	background-color: #00BEFF;
 }
