@@ -813,8 +813,8 @@ header.page-header .bl-logo-letter {
     display: block;
     position: absolute;
     top: 50%;
-    left: calc(52.5% - 602px);
-    width: 581px;
+    left: calc(52.5% - 1111px);
+  	width: 1081px;
     height: 200%;
     z-index: 1;
 
