@@ -766,12 +766,12 @@ header.page-header .bl-logo-letter {
 
 .wc-section {
     background-color: #fff;
-    padding-top: 80px;
 	position: relative;
 
     .wc-section-container {
         position: relative;
         overflow: hidden;
+		    padding-top: 80px;
     }
 
     .container {
