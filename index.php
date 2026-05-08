@@ -340,14 +340,14 @@
 							</div>
 						</div>
 					</div>
-					<video class="wc-section-video" autoplay muted loop playsinline>
-						<source
-							src="<?php echo get_template_directory_uri(); ?>/assets/video/wc_clip2.mp4"
-							type="video/mp4"
-						/>
-						Your browser does not support the video tag.
-					</video>
-				</div>
+				</div>					
+				<video class="wc-section-video" autoplay muted loop playsinline>
+					<source
+						src="<?php echo get_template_directory_uri(); ?>/assets/video/wc_clip2.mp4"
+						type="video/mp4"
+					/>
+					Your browser does not support the video tag.
+				</video>
 			</section>			
 		</main>
 		
