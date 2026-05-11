@@ -843,12 +843,14 @@ header.page-header .bl-logo-letter {
 	top: 50%;
 	right: 0;
 	min-width: auto;
+    /* min-width: 100%; */
 	min-height: 100%;
 	width: auto;
 	height: 100%;
 	transform: translate(0, -50%);
 	object-fit: cover;
 	background-color: #00BEFF;
+    /* background-image: url('assets/images/wc-video-placeholder.png'); */
 }
 
 .partners {

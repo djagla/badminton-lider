@@ -343,9 +343,10 @@
 				</div>					
 				<video class="wc-section-video" autoplay muted loop playsinline>
 					<source
-						src="<?php echo get_template_directory_uri(); ?>/assets/video/wc_clip2.mp4"
+						src="<?php echo get_template_directory_uri(); ?>/assets/video/___wc_clip2.mp4"
 						type="video/mp4"
 					/>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wc-video-placeholder.png" alt="Wielicki Cup" />
 					Your browser does not support the video tag.
 				</video>
 			</section>			
